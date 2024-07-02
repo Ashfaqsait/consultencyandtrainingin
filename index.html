@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<title>Consultancy and Training Agency</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+    
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.contactbg{
+    background-color: black;
+    color: aliceblue;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url('round.jpg');
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide ">Consultancy and Training Agency</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">HOME</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> About Us</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Services</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#team" onclick="about()" class="w3-bar-item w3-button">About us</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">SERVICE</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">New Innovative Ideas</span><br>
+   <p style="font-size: 60px;"><b>New Innovative Ideas</b></p>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Sign up to upload your CV aand increase your <br>chances of findingyour dreamjob!</a></p>
+    <button onclick="myFunction()" class="w3-button w3-black">SIGN UP</button>
+  </div> 
+  
+</header>
+
+<!-- About Section -->
+<div class="w3-container w3-row w3-center w3-light-blue" style="padding:50px 16px" id="about">
+    
+  <h3 class="w3-center"><b>OUR SERVICE AT A GLANCE</b></h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter" style="margin-right:10%">
+      <i class="fa fa-map-marker w3-margin-bottom w3-jumbo w3-center "></i>
+      <p class="w3-large">Offering global services!</p>
+      
+      <div> 
+        We improve business compliance enabling informed and agile decisions to maximise value for the organisation. 
+        <span id="span1">...</span> 
+        <span  class = "mybox1" id="mybox1id"> 
+          Providing comfort for the clients with new strategies. 
+             
+        </span> 
+    </div> 
+    <button id="mybuttonid1" 
+            onclick="changeReadMore()"> 
+        Read More 
+    </button> 
+
+    </div>
+    <div class="w3-quarter" style="margin-right: 10%">
+      <i class="fa fa-paper-plane w3-margin-bottom w3-jumbo" ></i>
+      <p class="w3-large">Services</p>
+      <div> 
+        Are you a specialist looking for an enriched, flexible unique tools that offers inspiring possibilities?
+        <span id="span2">...</span> 
+        <span  class = "mybox2" id="mybox2id"> 
+            We offer tailored ideas to accommodate client needs and meet their requirements.  
+        </span> 
+    </div> 
+    <button id="mybuttonid2" 
+            onclick="changeReadMore()"> 
+        Read More 
+    </button> 
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-arrow-up w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Approach</p>
+      <div> 
+        Key area of focus on adapting to client requirements and offering unique tool set and change management techniques
+        <span id="span2">...</span> 
+        <span  class = "mybox2" id="mybox2id"> 
+        We develop and implement robust change management strategies to drive cost-savings.  
+        </span> 
+    </div> 
+    <button id="mybuttonid2" 
+            onclick="changeReadMore()"> 
+        Read More 
+    </button> 
+    </div>
+   
+  </div>
+  
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:50px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <p >Please tell us about your project. We'll get back to you.
+        <button class="w3-button w3-red">
+            GET IN TOUCH!
+        </button> 
+      </p>
+
+  
+    </div>
+    
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-blue w3-padding-64">
+  <div class="w3-quarter">
+    <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+    <br>We understand client requirement and adapt Agile framework 
+  </div>
+  <div class="w3-quarter">
+    <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+    <br>Our services are customized
+  </div>
+  <div class="w3-quarter">
+    <i class="fa fa-user w3-margin-bottom w3-jumbo"></i>
+    <br>We connect with Clients
+  </div>
+  <div class="w3-quarter">
+    <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+    <br>We offer a comprehensive package that covers all aspect of the business
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+
+<div class="w3-container w3-light-black contactbg" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chennai, IN</p>
+
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@cta.co.in</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+
+    <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    
+</footer>
+<script>
+  function changeReadMore() { 
+    const mycontent = 
+        document.getElementById('mybox1id'); 
+    const mybutton = 
+        document.getElementById('mybuttonid1'); 
+    const span1 = document.getElementById("span1") 
+  
+    if (mycontent.style.display === 'none'
+        || mycontent.style.display === '') { 
+        mycontent.style.display = 'inline'; 
+        span1.style.display = "none"; 
+        mybutton.textContent = 'Read Less'; 
+    } else { 
+        mycontent.style.display = 'none'; 
+        mybutton.textContent = 'Read More'; 
+        span1.style.display = "inline"; 
+    } 
+}
+  function myFunction() {
+    location.replace("nextpage.html")
+  }
+
+  </script>
+</body>
+</html>
